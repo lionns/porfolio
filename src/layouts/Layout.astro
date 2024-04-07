@@ -18,10 +18,15 @@ const { title, lang } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-white dark:bg-black">
-    <slot class="relative overflow-hidden" />
+    <slot />
   </body>
 </html>
 <style is:global>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   /* Webfont: Thunder-BoldLC */
   @font-face {
     font-family: "Thunder-BoldLC";
