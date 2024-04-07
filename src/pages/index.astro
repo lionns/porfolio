@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Moon from "../icons/moon.astro";
 import Spanish from "../icons/spanish.astro";
+import ThemeIcon from "../components/ThemeIcon.astro";
 import Watermark from "../icons/watermark.astro";
 ---
 
@@ -13,23 +13,22 @@ import Watermark from "../icons/watermark.astro";
       <div
         class="flex gap-[25px] lg:order-last lg:flex-col lg:self-start lg:mt-[17px]"
       >
-        <button
-          class="hover:text-pink transition-[color] ease-linear duration-200"
-          type="button"><Moon /></button
-        >
+        <ThemeIcon />
         <a
-          class="hover:text-pink transition-[color] ease-linear duration-200"
-          href="/es"><Spanish /></a
+          class="dark:text-white hover:text-pink dark:hover:text-pink transition-[color] ease-linear duration-200"
+          href="/es"
         >
+          <Spanish />
+        </a>
       </div>
       <div class="text-center lg:text-right">
         <h1
-          class="font-thunder-bold-lc text-[150px] md:text-[250px] md:text-nowrap xl:text-[300px] uppercase text-center leading-none transition-[font-size] ease-in-out duration-200"
+          class="font-thunder-bold-lc dark:text-white text-[150px] md:text-[250px] md:text-nowrap xl:text-[300px] uppercase text-center leading-none transition-[font-size] ease-in-out duration-200"
         >
           JUAN LEÓN
         </h1>
         <span
-          class="font-thunder-lc text-[45px] md:text-[75px] leading-none transition-[font-size] ease-in-out duration-200"
+          class="font-thunder-lc dark:text-white text-[45px] md:text-[75px] leading-none transition-[font-size] ease-in-out duration-200"
         >
           Frontend Developer
         </span>
@@ -40,27 +39,31 @@ import Watermark from "../icons/watermark.astro";
         class="flex flex-col items-center lg:items-start gap-[25px] font-thunder-lc text-[30px] md:text-[50px] leading-none transition-[font-size] ease-in-out duration-200"
       >
         <li>
-          <a class="text-gray" href="#"
-            >Work <span class="font-thunder-hc text-pink">- Soon</span></a
-          >
+          <a class="text-gray" href="#">
+            Work <span class="font-thunder-hc text-pink">- Soon</span>
+          </a>
         </li>
         <li>
-          <a class="text-gray" href="#"
-            >About <span class="font-thunder-hc text-pink">- Soon</span></a
-          >
-        </li>
-        <li>
-          <a
-            class="hover:text-pink transition-[color] ease-linear duration-200"
-            href="mailto:juans.leonv@icloud.com">Contact</a
-          >
+          <a class="text-gray" href="#">
+            About <span class="font-thunder-hc text-pink">- Soon</span>
+          </a>
         </li>
         <li>
           <a
-            class="hover:text-pink transition-[color] ease-linear duration-200"
+            class="dark:text-white hover:text-pink dark:hover:text-pink transition-[color] ease-linear duration-200"
+            href="mailto:juans.leonv@icloud.com"
+          >
+            Contact
+          </a>
+        </li>
+        <li>
+          <a
+            class="dark:text-white hover:text-pink dark:hover:text-pink transition-[color] ease-linear duration-200"
             href="https://docs.google.com/document/d/1SFWzGyU0QDMEFh2L4dSZXODj861e6ehlu4M1vRbuz4M/edit#heading=h.w09y0jijhdyb"
-            target="_blank">Resume</a
+            target="_blank"
           >
+            Resume
+          </a>
         </li>
       </ul>
     </nav>

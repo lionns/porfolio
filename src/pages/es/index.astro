@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Moon from "../../icons/moon.astro";
 import English from "../../icons/english.astro";
+import ThemeIcon from "../../components/ThemeIcon.astro";
 import Watermark from "../../icons/watermark.astro";
 ---
 
@@ -13,23 +13,22 @@ import Watermark from "../../icons/watermark.astro";
       <div
         class="flex gap-[25px] lg:order-last lg:flex-col lg:self-start lg:mt-[17px]"
       >
-        <button
-          class="hover:text-pink transition-[color] ease-linear duration-200"
-          type="button"><Moon /></button
-        >
+        <ThemeIcon />
         <a
-          class="hover:text-pink transition-[color] ease-linear duration-200"
-          href="/"><English /></a
+          class="dark:text-white hover:text-pink dark:hover:text-pink transition-[color] ease-linear duration-200"
+          href="/"
         >
+          <English />
+        </a>
       </div>
       <div class="text-center lg:text-right">
         <h1
-          class="font-thunder-bold-lc text-[150px] md:text-[250px] md:text-nowrap xl:text-[300px] uppercase text-center leading-none transition-[font-size] ease-in-out duration-200"
+          class="font-thunder-bold-lc dark:text-white text-[150px] md:text-[250px] md:text-nowrap xl:text-[300px] uppercase text-center leading-none transition-[font-size] ease-in-out duration-200"
         >
           JUAN LEÓN
         </h1>
         <span
-          class="font-thunder-lc text-[45px] md:text-[75px] leading-none transition-[font-size] ease-in-out duration-200"
+          class="font-thunder-lc dark:text-white text-[45px] md:text-[75px] leading-none transition-[font-size] ease-in-out duration-200"
         >
           Desarrollador Frontend
         </span>
@@ -41,7 +40,8 @@ import Watermark from "../../icons/watermark.astro";
       >
         <li>
           <a class="text-gray" href="#"
-            >Proyectos <span class="font-thunder-hc text-pink">- Pronto</span></a
+            >Proyectos <span class="font-thunder-hc text-pink">- Pronto</span
+            ></a
           >
         </li>
         <li>
@@ -51,13 +51,13 @@ import Watermark from "../../icons/watermark.astro";
         </li>
         <li>
           <a
-            class="hover:text-pink transition-[color] ease-linear duration-200"
+            class="dark:text-white hover:text-pink dark:hover:text-pink transition-[color] ease-linear duration-200"
             href="mailto:juans.leonv@icloud.com">Contacto</a
           >
         </li>
         <li>
           <a
-            class="hover:text-pink transition-[color] ease-linear duration-200"
+            class="dark:text-white hover:text-pink dark:hover:text-pink transition-[color] ease-linear duration-200"
             href="https://docs.google.com/document/d/1-raouugth61NAd_I9rbuC-E5S962aQt3aTmBgAbGj2A/edit?usp=sharing"
             target="_blank">Curriculum</a
           >
